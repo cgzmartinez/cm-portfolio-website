@@ -233,6 +233,7 @@ text-align: center;
    width: auto;
    min-height: auto;
 	 margin: 0px;
+   border-radius: 20px
 }
 
 .grid__item:last-child {
