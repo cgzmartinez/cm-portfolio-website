@@ -105,6 +105,17 @@ a {
   color: #314cb6;
 }
 
+.list {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  column-gap: 20px;
+}
+
+.list-two {
+  padding: 1em;
+}
+
 a:visited {
   /* visited link */
   color: var(--magenta-pantone);
@@ -374,64 +385,115 @@ tbody tr:nth-child(odd) {
   }
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #ff6584;
-  }
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  display: grid;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  /* <===  */
+  border-radius: 15px;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #ff6584;
-  }
+.slide {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
 }
 
-.sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 5px);
-    transform: translate(0, 5px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 5px);
-    transform: translate(200px, 5px);
-  }
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
 }
 
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 5px);
-    transform: translate(0, 5px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 5px);
-    transform: translate(200px, 5px);
-  }
+.btn:active {
+  transform: scale(1.1);
 }
 
-.cloud-front {
-  -webkit-animation: 15s cloud-move infinite alternate linear;
-  animation: 15s cloud-move infinite alternate linear;
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+.case-text {
+  margin: 4em;
+}
+
+.center-img {
+  text-align: center;
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.img-ex {
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.shadow-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+  transform: scale(1.5);
+}
+
+.card {
+  transition: transform 0.5s;
+}
+
+.card-one:hover {
+  transform: scale(1.1);
+}
+
+.card-one {
+  transition: transform 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
 }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Martinez | Portfolio</title>
+  <link rel="shortcut icon" type="image/png" href="img/myfavicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- Insert custom logo -->
+    <a href="index.html"><img src="img/logo_new.PNG" width="400" height="auto" alt="logo"></a>
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="case-text">
+    <h1 class="profile">Case Study for MyFlix Angular Application</h1>
+    <br>
+    <br>
+    <img src="img/angular-app.png" class="center-img shadow-img" width="750px" height="auto" alt="angular applicaiton">
+    <br>
+    <h3 class="">Overview:</h3>
+    <p>MyFlix is a web app built using the popular framework Angular. The application allows users to create accounts,
+      update personal information, and create a list of their favorite movies.</p>
+    <h3>Purpose:</h3>
+    <p>MyFlix served as practice in building applications with Angular and deepened my understanding of JavaScript and
+      TypeScript.</p>
+    <h4>Tools:</h4>
+    <div class="list">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <ul class="list-two">
+        <li>Angular</li>
+        <li>TypeScript</li>
+        <li>Postman</li>
+      </ul>
+      <ul class="list-two">
+        <li>Karma</li>
+        <li>MongoDB</li>
+        <li>Jest</li>
+      </ul>
+    </div>
+    <h3>Objective:</h3>
+    <p>My goal for this project was to create a single-page movie application using Angular that I can showcase in my
+      professional portfolio.</p>
+    <h3>Approach:</h3>
+    <p>My approach for this project consisted of
+      two stages: use the application's existing server-side code (REST API and MongoDB) to create the client side of
+      the application, and test the application with Postman and Karma.</p>
+    <img src="img/plan.png" alt="software plan" width="500px" class="img-ex">
+    <h3>Server-Side:</h3>
+    <p>Before this project, I created a REST API that stores information on a specific set of movies. This information
+      was stored in a database program called MongoDB.</p>
+    <br>
+    <img src="img/movies_minari.png" alt="code for minari" width="700px" class="card-one img-ex shadow-img">
+    <br>
+    <br>
+    <p>The movie info can be accessed through HTTP endpoints. CRUD operations that affect user information can be
+      accessed through endpoints as well.</p>
+    <p>I used Postman to test the endpoints before designing the client-side programming. </p>
+    <br>
+    <h3>Client-Side:</h3>
+    <p>
+      After ensuring that the server-side code was working correctly, I moved on to building the application with
+      Angular. The application follows a single-page model that uses different components and forms for the user to
+      access information.
+    </p>
+    <p>Login and Registration forms allow users to log in or register, respectively. A movie-view component allows users
+      to see info on different movies. A user can also add these movies to their favorites list. The profile-view
+      component allows users to edit their profile information.
+    </p>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img src="img/welcome.png" alt="" style="width:300px" class="card shadow-img">
+        <figcaption>Login View</figcaption>
+      </div>
+      <div class="column">
+        <img src="img/view.png" alt="" style="width:300px" class="card shadow-img">
+        <figcaption>Movie View</figcaption>
+
+      </div>
+      <div class="column">
+        <img src="img/edit.png" alt="" style="width:300px" class="card shadow-img">
+        <figcaption>Profile View</figcaption>
+      </div>
+    </div>
+    <h3>Challenges</h3>
+    <p>The biggest challenge that I had with this project was getting the "add to favorites" feature to work. The idea
+      is
+      very simple: click the heart and it will turn red. The movie will then be added to a user's list of favorites, and
+      the heart will remain red until it is clicked again. Unfortunately, favoriting a movie would cause the app to
+      crash.
+    </p>
+
+    <p>I was able to fix this by making sure the syntax for favoriting movies in the code for the application matched
+      with the movie API's code. I then used Karma to make sure it worked as intended. </p>
+    <br>
+    <div class="row">
+      <div class="column">
+        <img src="img/code1.png" alt="" style="width:300px" class="card shadow-img">
+        <figcaption>Server-Side Syntax</figcaption>
+      </div>
+      <div class="column">
+        <img src="img/code2.png" alt="" style="width:300px" class="card shadow-img">
+        <figcaption>Client-Side Syntax</figcaption>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <!-- Insert social media icons -->
+      <a href="https://github.com/cgzmartinez" target="_blank"><img src="img/github_icon.svg" class="icon"
+          alt="Github"></a>
+      <a href="https://www.linkedin.com/in/carlos-martinez-art/" target="_blank"><img src="img/linkedin_icon.svg"
+          class="icon" alt="LinkedIn"></a>
+      <a href="https://twitter.com/cgzmarti" target="_blank"><img src="img/twitter_icon.svg" class="icon"></a>
+      <a href="https://medium.com/@cgzmarti" target="_blank"><img src="img/medium.png" class="icon" width="auto"
+          height="30px"></a>
+    </div>
+  </footer>
+  <br>
+  <script src="js/casestudy.js"></script>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
